@@ -1,0 +1,45 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - digital applications
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Digital applications
+      <span class="govuk-caption-xl">testing ideas for an HMLR design system</span>
+    </h1>
+    <p>realistic, anonymised digital applications, in json format compatible with digital services.</p>
+
+    <h2 class="govuk-heading-m">Static examples</h2>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="">Death of a joint proprietor, two private owners, no charges</a></li>
+    	<li><a href="">Death of a joint proprietor, one private owners, mortgage</a></li>
+    	<li><a href="">Remortgage - charge (discharge, transfer, charge), two private owners</a></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Dynamic examples</h2>
+    <p>genrate me an application with random, anonymous people and places:</p>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="">Death of a joint proprietor, two private owners, no charges</a></li>
+    	<li><a href="">Death of a joint proprietor, one private owners, mortgage</a></li>
+    </ul>
+    <p>this is prototype code - knocked up to illusrate ideas, not how you'd really build this app</p>
+
+  </div>
+</div>
+
+{% endblock %}
