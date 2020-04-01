@@ -22,3 +22,16 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 @import "node_modules/govuk-frontend/govuk/all";
+
+// App-specific variables
+$app-light-grey: #f8f8f8;
+$app-code-color: #d13118;
+
+// App-specific components
+@import "components/app-navigation";
+@import "components/app-sidebar-navigation";
+
+// We don't change the global width container width so that examples are the current width.
+.app-width-container {
+  @include govuk-width-container(1100px);
+}
