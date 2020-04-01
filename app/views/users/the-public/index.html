@@ -1,0 +1,55 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system -the public
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      the Public
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+
+    <h2 class="govuk-heading-l">Public user groups</h2>
+
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="#home-owners">Home onwers</a></li>
+    	<li><a href="#renters">Renters</a></li>
+    	<li><a href="#first-time">First time buyers</a></li>
+    	<li><a href="#remortgagers">People re-morgtaging</a></li>
+    	<li><a href="#public-landlords">private and semi professional landlords</a></li>
+    	<li><a href="#self-conveyancers">Self conveyancers</a></li>
+    </ul>
+
+    <h3 class="govuk-heading-m" id="home-owners">Home onwers</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h3 class="govuk-heading-m" id="renters">Renters</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h3 class="govuk-heading-m" id="first-time">First time buyers</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h3 class="govuk-heading-m" id="remortgagers">People re-morgtaging</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h3 class="govuk-heading-m" id="public-landlords">Private and semi professional landlords</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+  </div>
+</div>
+
+{% endblock %}

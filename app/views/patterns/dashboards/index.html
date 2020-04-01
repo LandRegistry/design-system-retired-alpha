@@ -1,0 +1,41 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Service dashboard
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Service Dashboards
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+    <p>Serice dashboards, also know as management information. Standard templates for presenting clear, accurate, real time analytical data to staff</p>
+
+    <h2 class="govuk-heading-m">templates</h2>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="">Casework dashboard</a></li>
+    	<li><a href="">Portal user dashboard</a></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Analytics</h2>
+    <p><a href="/data/analytics/">Example code to capture and manipulate quantitive data</a> from protoypes and production</p>
+
+    
+
+  </div>
+</div>
+
+{% endblock %}

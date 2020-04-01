@@ -1,0 +1,69 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Gov.uk services
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Staff - Caseworkers
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+
+    <h2 class="govuk-heading-l">Caseworkers</h2>
+
+    <p>How caseworkers work, how teams work, what type of work they do, what legal and digital skills they have, their aspirations, frustrations, etc</p>
+
+    <p>Roles:
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="#re2">Registration executives</a></li>
+    	<li><a href="#laywers">Lawyers</a></li>
+    </ul>
+
+    <p>Types of work:
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="#devs">Devs</a></li>
+    	<li><a href="#non-devs">Non devs</a></li>
+    	<li><a href="#drafting">Drafting registers</a></li>
+    	<li><a href="#mapping">Mapping</a></li>
+    </ul>
+
+		<h3 class="govuk-heading-m">Roles</h3>
+
+    <h4 class="govuk-heading-s" id="re2">Registration executives</h4>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h3 class="govuk-heading-s" id="Lawyers">Lawyers</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+		<h3 class="govuk-heading-m">Types of work</h3>
+		
+    <h4 class="govuk-heading-s" id="devs">Devs</h4>
+    <p>synopsis of this type of work and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h4 class="govuk-heading-s" id="non-devs">Non Devs</h4>
+    <p>synopsis of this type of work and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h4 class="govuk-heading-s" id="drafting">Drafting title registers</h4>
+    <p>synopsis of this type of work and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h4 class="govuk-heading-s" id="mapping">Mapping</h4>
+    <p>synopsis of this type of work and links on to further detailed information managed by the User Research community of practice</p>
+
+  </div>
+</div>
+
+{% endblock %}

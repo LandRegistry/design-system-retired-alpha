@@ -1,0 +1,31 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Product and delivery
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Product and delivery
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+    <p class="govuk-body-l">What product and delivery managers need to do to make digital services accessible.</p>
+    <p>Have a read of the <a href="https://service-manual.nhs.uk/accessibility/product-and-delivery">NHS Service Manual - accessible content</a></p>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -16,7 +16,7 @@
 
   		<div class="govuk-grid-column-three-quarters">
 		    {% block beforeContent %}{% endblock %}
-		    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+		    <main class="govuk-main-wrapper {{ mainClasses }}" style="padding-top:30px;" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
 		      {% block content %}{% endblock %}
 	    	</main>
 	    </div>

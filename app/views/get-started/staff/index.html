@@ -1,0 +1,64 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Casework
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Casework
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+
+		<h2 class="govuk-heading-m">Get started</h2>
+ 		<p><a href="">Browse the manual with only the guidance for casework systems</a> (hide all gov.uk and HMLR professional services content).  You may toggle this on and off on any page in this manual.</p>
+
+ 		<h2 class="govuk-heading-m">Overview</h2>
+    <p>This manual will contain examples to design, code and write for new casework systems used by staff</p>
+
+  	<p>The starting point for our casework services and tools is government patterns (from gov.uk, and government departments), components and writing guides, as they are proven patterns, established by thousands to millions of individual users in prototyped and production services.</p>
+
+    <p>The context of casework systems is different to professional and public services, so the patterns, components and writing is adapted to utilise those proven patterns in a casework context</a></p>
+
+    <p>You may also use non gov.uk patterns as a starting point to experiment if they would work for caseworkers.  Discuss their use with the design community of practice - for help using them, and to help us develop them further. <a href="">find out how to discuss this with the design community</a></p>
+
+    <h2 class="govuk-heading-m">Government design links</h2>
+    <p class="govuk-body-l"></p>
+    <h3 class="govuk-heading-s">GOV.UK</h3>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="https://design-system.service.gov.uk">GOVUK design system</a></li>
+    	<li><a href="https://www.gov.uk/service-manual">GOVUK Service Manual</a></li>
+    	<li><a href="https://www.gov.uk/guidance/content-design">GOVUK Content design</a></li>
+    </ul>
+    <h3 class="govuk-heading-s">Cross government </h3>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="">casework and admin interface design system</a></li>
+    	<li><a href="">casework and admin interface design community</a></li>
+    </ul>
+    <h3 class="govuk-heading-s">UK government departments</h3>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="">Home Office design system</a></li>
+    	<li><a href="">NHS Service Manual</a></li>
+    	<li><a href="">DWP design system</a></li>
+    	<li><a href="">DVLA pattern library</a></li>
+    </ul>
+    
+    
+
+  </div>
+</div>
+
+{% endblock %}

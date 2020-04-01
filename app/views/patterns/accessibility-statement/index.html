@@ -1,0 +1,39 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Accessibilty statement
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Accessibility statement
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+    <p>Template accessibility statement and notes on completing the statement for services, and sub services</p>
+
+    <h2 class="govuk-heading-m">Statements</h2>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="https://design-system.service.gov.uk">GOV.UK statement</a></li>
+    	<li><a href="https://service-manual.nhs.uk">HMLR external service statment</a></li>
+    	<li><a href="https://service-manual.nhs.uk">Casework and staff product statments</a></li>
+    </ul>
+    
+    
+
+  </div>
+</div>
+
+{% endblock %}
