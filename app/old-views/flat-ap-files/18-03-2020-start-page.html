@@ -1,0 +1,54 @@
+<html lang="en" class="govuk-template hmlr-sticky-footer">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#FFFFFF">
+    <title>Casework</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/flat-ap-main.css">
+  </head>
+  <body class="govuk-template__body hmlr-theme js-enabled">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="wrapper">
+        <a href="#content" class="govuk-skip-link ">Skip to main content</a>
+        <header class="hmlr-header hmlr-header--dark header-width">
+          <div class="hmlr-header__inner"><span class="hmlr-header__title">Application Processing: Casework</span></div>
+        </header>
+        <main class="hmlr-grid-main" id="main-content" role="main">
+          <div class="hmlr-grid-column hmlr-grid-column--200"></div>
+          <div id="content" class="hmlr-grid-column hmlr-grid-column--main hmlr-grid-column--home">
+            <div class="hmlr-grid-row">
+              <div class="hmlr-grid-column-two-thirds">
+                <h1 class="govuk-heading-l govuk-!-margin-top-0 govuk-!-margin-bottom-6">Select application</h1>
+                <p class="hmlr-body">These applications have been checked by automation.</p>
+                <p class="hmlr-body">The system will show you what was checked and what tasks are for you to complete in order to finish the application.</p>
+                <div class="notification-container"></div>
+                <div class="hmlr-applications-list">
+                  <ul class="govuk-list applications-list">
+                    <li class="applications-list-item">
+                      <div class="govuk-form-group ">
+                        <div class="govuk-radios govuk-radios--small">
+                          <div class="govuk-radios__item"><input class="govuk-radios__input" id="applications" name="applications" type="radio" value="/casework/tasks" checked=""><label class="govuk-label govuk-radios__label" for="applications">Death of a joint proprietor</label></div>
+                        </div>
+                      </div>
+                      <span id="statusIndicator" class="govuk-body status-outer notification-home"><span class="status status-good"></span>applications available</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- <button id="startNewApplication" data-module="govuk-button" class="govuk-button  ">Start</button> -->
+                <a href="task-page.html" class="govuk-button">Start</a>
+              </div>
+            </div>
+          </div>
+          <div class="hmlr-grid-column hmlr-grid-column--200"></div>
+        </main>
+        <footer class="hmlr-footer hmlr-footer--dark hmlr-footer--full-width">
+          <div class="hmlr-footer__inner"><img class="hmlr-footer__logo" width="172px" height="55px" src="/public/images/logo-greyscale.png" alt="HM Land Registry"></div>
+        </footer>
+      </div>
+    </div>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <script type="application/json" id="environment-variables">{"POLL_INTERVAL": "15000", "AA_UX_SERVICE_URL": "https://ap-proxy-application-processing-preview.development.stp.hmlr.zone/application-assurance/ux/api/v1"}</script>
+    <!-- <script src="/casework/js/main.js"></script> -->
+  </body>
+</html>

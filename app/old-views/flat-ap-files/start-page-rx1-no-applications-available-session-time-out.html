@@ -1,0 +1,72 @@
+<html lang="en" class="govuk-template hmlr-sticky-footer">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#FFFFFF">
+    <title>Casework</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/flat-ap-main-30-03-2020.css">
+  </head>
+  <body class="govuk-template__body hmlr-theme js-enabled">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="wrapper">
+        <a href="#content" class="govuk-skip-link ">Skip to main content</a>
+        <header class="hmlr-header hmlr-header--dark header-width">
+          <div class="hmlr-header__inner"><span class="hmlr-header__title">Application Processing: Casework</span></div>
+        </header>
+        <main class="hmlr-grid-main" id="main-content" role="main">
+          <div class="hmlr-grid-column hmlr-grid-column--200"></div>
+          <div id="content" class="hmlr-grid-column hmlr-grid-column--main hmlr-grid-column--home">
+            <div class="hmlr-grid-row">
+              <div class="hmlr-grid-column-two-thirds">
+                <h1 class="govuk-heading-l govuk-!-margin-top-0 govuk-!-margin-bottom-6">Select application</h1>
+                <p class="hmlr-body">These applications have been checked by automation.</p>
+                <p class="hmlr-body">The system will show you what was checked and what tasks are for you to complete in order to finish the application.</p>
+                <div class="notification-container">
+                  <div class="notification notification-warning" data-testid="notification">
+                    <div class="notification-icon-container notification-warning"><span class="notification-icon"></span></div>
+                    <div>
+                      <p class="govuk-heading-s govuk-!-margin-left-2">You've been logged out</p>
+                      <p class="govuk-body govuk-!-margin-left-2 govuk-!-margin-bottom-0">
+                        The system has logged you out after a period of inactivity. 
+                        <button id="notification-action" class="notification-close notification-close__inline">
+                      <div class="hmlr-body">Log in again</div></button>.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="hmlr-applications-list">
+                  <ul class="govuk-list applications-list">
+                    <li class="applications-list-item">
+                      <div class="govuk-form-group ">
+                        <div class="govuk-radios govuk-radios--small">
+                          <div class="govuk-radios__item"><input class="govuk-radios__input" id="DJP" name="applications" type="radio" disabled="" value="DJP"><label class="govuk-label govuk-radios__label" for="DJP">DJP: Death of joint proprietor</label></div>
+                        </div>
+                      </div>
+                      <span id="statusIndicator" class="govuk-body status-outer notification-home"><span class="status status-warning"></span>applications not available</span>
+                    </li>
+                    <li class="applications-list-item">
+                      <div class="govuk-form-group ">
+                        <div class="govuk-radios govuk-radios--small">
+                          <div class="govuk-radios__item"><input class="govuk-radios__input" id="RX1" name="applications" type="radio" disabled="" value="RX1"><label class="govuk-label govuk-radios__label" for="RX1">RX1: Enter a restriction</label></div>
+                        </div>
+                      </div>
+                      <span id="statusIndicator" class="govuk-body status-outer notification-home"><span class="status status-warning"></span>applications not available</span>
+                    </li>
+                  </ul>
+                </div>
+                <button id="startNewApplication" disabled="" data-module="govuk-button" class="govuk-button  ">Start</button>
+              </div>
+            </div>
+          </div>
+          <div class="hmlr-grid-column hmlr-grid-column--200"></div>
+        </main>
+        <footer class="hmlr-footer hmlr-footer--dark hmlr-footer--full-width">
+          <div class="hmlr-footer__inner"><img class="hmlr-footer__logo" width="172px" height="55px" src="/public/images/logo-greyscale.png" alt="HM Land Registry"></div>
+        </footer>
+      </div>
+    </div>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <script type="application/json" id="environment-variables">{"POLL_INTERVAL": "15000", "AA_UX_SERVICE_URL": "https://ap-proxy-application-processing-preview.development.stp.hmlr.zone/application-assurance/ux/api/v1"}</script>
+    <!-- <script src="/casework/js/main.js"></script> -->
+  </body>
+</html>

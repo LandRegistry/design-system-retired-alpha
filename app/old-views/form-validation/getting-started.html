@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Getting started - Form validation in the GOV.UK Protoype kit
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Getting started  </h1>
+      <p class="govuk-body-l">Adding the validation code to the kit</p>
+
+      <p>This will give you form validation for all the straightfoward input components, plus <a href="https://design-system.service.gov.uk/components/date-input/">date input</a> and <a href="https://design-system.service.gov.uk/components/checkboxes#conditionally-revealing-content">conditionally revealed content</a></p>
+
+     <!-- TODO: add a custom validator example. the js file exists (for postcode) - but we've not written the script yet -->
+
+      <h2 class="govuk-heading-m">Install the libraries</h2>
+      <p class="govuk-body">On Mac, open terminal and navigate into your prototype folder</p>
+      <p class="govuk-body">Install the <a href="https://validatejs.org/">validate.js</a> library, and the <a href="https://momentjs.com/">moment.js</a> (for the date input) library by entering the following commands</p>
+      <pre class="app-code"><code>npm install validate.js</code></pre>
+      <pre class="app-code"><code>npm install moment</code></pre>
+
+      <h2 class="govuk-heading-m">Set up routes</h2>
+      <p class="govuk-body">With the prototype open in your text editor, open the <code class="app-prose-scope"> routes.js</code> file in your <code class="app-prose-scope">app</code> folder.</p>
+      <p class="govuk-body">Under the 'Add your routes here' comment, add the following code:</p>
+      <pre class="app-code"><code>router.use('/node_modules', express.static('node_modules'))</code></pre>
+
+      <br>
+
+        <h2 class="govuk-heading-m">Download the javascript files</h2>
+        <p class="govuk-body">Download and unzip the following file:</p>
+
+        <a class="govuk-body" href="/public/documents/Form-validation-javascripts.zip" Download>Form validation javascript (zip)</a>
+        <br>
+        <br>
+        <p class="govuk-body">Once unzipped, add the files to <code class="app-prose-scope"> app/assets/javascripts</code> in your editor.
+
+
+
+
+        <h2 class="govuk-heading-m">Adding scripts</h2>
+        <p class="govuk-body">Put the following javascript lines in the <code class="app-prose-scope">views/includes/scripts.html</code> file. <br> Add the lines underneath the existing jquery script:</p>
+
+        <p class="app-prose-scope">
+          <code >
+          &lt;script src="/node_modules/validate.js/validate.min.js"&gt;&lt;/script&gt<br>
+          &lt;script src="/node_modules/moment/min/moment.min.js"&gt;&lt;/script&gt<br>
+          &lt;script src="/public/javascripts/custom-validator.js"&gt;&lt;/script&gt<br>
+          &lt;script src="/public/javascripts/conditionally-required-validator.js"&gt;&lt;/script&gt<br> 
+          &lt;script src="/public/javascripts/date-validator.js"&gt;&lt;/script&gt<br>        
+          &lt;script src="/public/javascripts/form-validation.js"&gt;&lt;/script&gt<br>
+          </code>
+        </p>
+        
+        <br>
+
+        <h2 class="govuk-heading-m">Save and restart</h2>
+        <p class="govuk-body">Save the changes in your text edtior, then restart the prototype in terminal.</p>
+        <br>
+
+        <h2 class="govuk-heading-m">Installation complete</h2>
+        <p class="govuk-body">
+
+        <a href="validation-documentation#component-rules">Your prototype is now ready to add validation rules to input components</a></p>
+      </div>
+    </div>
+
+{% endblock %}

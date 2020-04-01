@@ -1,0 +1,123 @@
+<html lang="en" class="govuk-template hmlr-sticky-footer">
+  <head>
+    <title>Application processing - pages / states</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/flat-ap-main.css">
+    <style>
+			.screenshot-list {padding-left:45px; font-size:90%; display:inline-block;}
+			/*.screenshot-list::before {content : "screenshots: ";}*/
+			li > ul > li  {padding-left:20px;}
+		</style>
+  </head>
+  <body class="govuk-template__body hmlr-theme js-enabled">
+
+    <main class="hmlr-grid-main" id="main-content" role="main">
+      <div id="content" class="hmlr-grid-column hmlr-grid-column--main hmlr-grid-column--home">
+        <div class="hmlr-grid-row">
+          <div class="hmlr-grid-column-two-thirds">
+            <h1 class="govuk-heading-l">Pages and page states - from preview</h1>
+            <p class="hmlr-body">last updated 18 to 20 march 2020 - work on the UI is still in flight for first code (UI) release</p>
+            <p>page - using this term to describe significantly different views (from the users perspective).  Actually (technically) is a single page application (SPA) [start and task are on different urls - so need to confirm if all SPA or 2 SPA's]</p>
+            <p>code versions first (actual HTML / CSS), and screenshots from preview environment
+            <h2 class="govuk-heading-m govuk-!-margin-top-6 govuk-!-margin-bottom-0">Start page</h2>
+            <p class="hmlr-body">
+              <ul class="govuk-list">
+                <li><a href="20-03-2020-start-page.html">applications available</a>
+									<div class="screenshot-list"><a href="/public/images/screenshots/start-page-applications-available.png">screenshot</a>
+                	</div>
+                </li>
+                <li><a href="start-page-applications-unavailable.html">no applications available</a>
+                	<div class="screenshot-list"><a href="/public/images/screenshots/start-page-applications-unavailable.png">screenshot</a>
+                	</div>	
+                </li>
+                <li><a href="start-page-no-applications-available-26-03.html">DJP+RX1 - No applications avialable - 26-03-2020</a>
+                </li>
+                <li><a href="start-page-session-timeout.html">session timeout (30 mins) log in</a>
+                	<div class="screenshot-list"><a href="/public/images/screenshots/start-page-session-timeout.png">screenshot</a>
+                	</div>
+                </li>
+                <li><a href="start-page-500-error-polling.html">error - polling - 500</a>
+                	<div class="screenshot-list"><a href="/public/images/screenshots/start-page-500-error-polling.png">screenshot</a>
+                	</div>
+                </li>
+                <li>race condition - was an application availble after polling, but not when user selects start</li>
+                <hr>
+                <li><a href="start-page-rx1-no-applications-available.html">RX1 no applications available</a> (30-03-2020)
+                </li>
+                <li><a href="start-page-rx1-no-applications-available-session-time-out.html">RX1 no applications available - session timeout</a> (30-03-2020)
+                </li> 
+              </ul>
+            </p>
+            <h2 class="govuk-heading-m govuk-!-margin-top-6 govuk-!-margin-bottom-0">Task page (DJP)</h2>
+            <p class="hmlr-body">
+              <ul class="govuk-list">
+                <li><a href="task-page.html">working as expected (questions not yet ready)</a>
+                	<div class="screenshot-list">
+										<a href="/public/images/screenshots/task-page-ok-01.png">screenshot 1</a> 
+										<a href="/public/images/screenshots/task-page-ok-02.png">screenshot 2</a>
+									</div>
+                </li>
+                <li>
+                	<!-- <a href="task-form-validation-complete-the-questions.html">complete the questions - form validation</a> -->
+                	<a href="task-page-form-validation.html">complete the questions - form validation</a>
+                	<div class="screenshot-list">
+                		<a href="/public/images/screenshots/task-form-validation-complete-the-questions-01.png">screenshot 1</a> 
+                		<a href="/public/images/screenshots/task-form-validation-complete-the-questions-02.png">screenshot 2</a>
+                	</div>
+                </li>
+                <li><a href="task-form-submit-service-down.html">submit answer - error - 500</a>
+                	<div class="screenshot-list"><a href="/public/images/screenshots/task-form-submit-service-down.png">screenshot</a>
+                	</div>
+                </li>
+                <li><a href="task-form-return-esrv-service-down.html">return to ESRV - error - 500</a>
+                	<div class="screenshot-list"><a href="/public/images/screenshots/task-form-return-esrv-service-down.png">screenshot</a>
+                	</div>
+                </li>
+                <li><a href="task-page-register-session-timeout.html">session timeout (30 mins) log in</a>
+                	<div class="screenshot-list"><a href="/public/images/screenshots/task-page-session-timeout.png">screenshot</a>
+                	</div>
+                </li>
+                <li>register-service-unavaliable - error - 500               	
+                	<div class="screenshot-list"><a href="/public/images/screenshots/register-service-unavaliable-500.png">screenshot</a>
+                	</div>
+                </li>
+                <li><a href="task-form-register-service-press-close-message.html">register-service-unavaliable - after close 500 message</a>
+									<div class="screenshot-list">
+										<a href="/public/images/screenshots/task-form-register-service-press-close-message-01.png">screenshot 1</a> 
+										<a href="/public/images/screenshots/task-form-register-service-press-close-message-02.png">screenshot 2</a> 
+										<a href="/public/images/screenshots/task-form-register-service-press-close-message-03.png">screenshot 3</a> 
+										<a href="/public/images/screenshots/task-form-register-service-press-close-message-04.png">screenshot 4</a>
+									</div>
+                </li>
+                <li><a href="task-page-page-source.html">javascript disabled/unavailable on users machine</a>
+                	<div class="screenshot-list"><a href="/public/images/screenshots/javascript-disabled.png">screenshot</a>
+                	</div>
+                </li>
+              </ul>
+            </p>
+            <h2 class="govuk-heading-m govuk-!-margin-top-6 govuk-!-margin-bottom-0">Finish page (start page - after a task)</h2>
+            <p class="hmlr-body">
+              <ul class="govuk-list">
+                <li>Application tasks complete</li>
+                <li><a href="finish-page-20-03.html">Application sent to ESRV</a>
+<!-- 									<div class="screenshot-list"><a href="/public/images/screenshots/start-page-applications-available.png">screenshot</a>
+                	</div>  -->
+                <li>the above situations with:
+                	<ul class="govuk-list govuk-list--bullet">
+		                <li>Applications available (DJP, and DJP + RX1)</li>
+		                <li>Applications not available</li>
+		              	<li>Applications available for one app type (DJP or RX1)</li>
+		                <li>Start application - Form message - user must pick an application to start</li>
+		                <li>session timeout (30 mins)</li>
+		                <li>polling service error - 500</a></li>
+		                <li>race condition - was an application availble after polling, but not when user selects start</li>
+		              </ul>
+		             </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>

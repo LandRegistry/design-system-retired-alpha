@@ -1,0 +1,55 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  How to add validation to your GOV.UK Protoype kit
+{% endblock %}
+
+{% block content %}
+
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Add validation to your prototype
+      </h1>
+      <p class="govuk-body-l">
+			There are various types of validation you can do - for example, to ensure the field isn't blank, if a checkbox or radio button has been selected, if what's entered is long enough, if it's a pattern like a postcode.</p>
+
+      <p>The validation uses the javascript library validate.js, which contains all these <a href="https://validatejs.org/#validators">standard validators and the ability to create custom validation rules</a>.  The documentation can be hard to read - to translate into how to use in this kit, so we've included common examples.</p>
+      <p>If you need help, ask Ros or Andy.</p>
+      <p>If you find a bug, make a new example, or can improve this documentation - <a href="https://github.com/LandRegistry/govuk-prototype-kit-form-validation">please grab it, and merge</a> your lovely improvement in.</p>
+
+      <h2 class="govuk-heading-l">Adding the validation code to the kit</h2>
+
+      <p><a href="getting-started.html" class="govuk-body">Follow the setup guide</a></p>
+
+      <h2 class="govuk-heading-l" id="component-rules">Adding validation rules to an input component</h2>
+      <p>Now you are ready to add validation to your individual form pages</p>
+
+			<p>There is a <a href="validation-page-template">basic code pattern to any page you want validation on</a>, which you need to add and understand, upon which you can then add the specfic validation json per page - shown in the examples below</p>
+
+      <h3 name="setup" class="govuk-heading-m">Example input fields and types of validation</h3>
+
+      
+
+			<ul class="govuk-list govuk-list--bullet">
+			  <li><b>Text input:</b> <br><a href="validation-text-not-empty">is not empty</a>, length, email address, <a href="validation-confirmation">two fields match (passwords)</a></li>
+			  <li><b>Radios:</b> <br>one has been selected, <a href="validation-conditionally-required">conditional information exists</a></li>
+			  <li><b>Checkboxes:</b> <br>one has been selected</li>
+			  <li><b>Textarea:</b> <br>is not empty</li>
+			  <li><b>Select:</b> <br>an item has been selected</li>
+			  <li><b>Date input pattern:</b> <br><a href="validation-date">fields are not empty/date is valid</a></li>
+			  <li><b>Fieldset - multiple fields like address:</b> <br>fields are not empty, is a postcode</li>
+			</ul>
+
+			<p>Also have a look at the source code of the <a href="validation-example">big example page</a> in your browser, or on <a href="https://github.com/LandRegistry/govuk-prototype-kit-form-validation/blob/master/app/views/validation-example.html">github</a></p>
+
+
+
+    </div>
+</div>
+
+{% endblock %}

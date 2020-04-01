@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirmation - Form validation in the GOV.UK Protoype kit
+{% endblock %}
+
+{% block content %}
+
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+      
+
+      <form action="/form-handler" method="post" novalidate data-validate='my-form-validation'>
+
+	      <!-- text input -->
+	      <h1 class="govuk-heading-xl">Confirmation</h1>
+	      <p class="govuk-body-l">
+        If two fields match
+      	</p>
+	      {% from "govuk/components/input/macro.njk" import govukInput %}
+
+	      {{ govukInput({
+				  label: {
+				    text: "password"
+				  },
+				  id: "password",
+				  name: "password"
+				}) }}
+
+
+				{{ govukInput({
+				  label: {
+				    text: "confirm password"
+				  },
+				  id: "password-confirmation",
+				  name: "password-confirmation"
+				}) }}
+
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+
+      </form>
+
+      <script type="application/json" id="my-form-validation">
+			  { 		
+			  	"password": {
+			  		"presence": {
+			        "message": "^please choose a password"
+			      }
+			    }, 	
+			  	"password-confirmation": {
+			  		"presence": {
+			        "message": "^please retype your chosen password"
+			      },
+			      "equality": {
+			        "attribute": "password",
+			        "message" : "^passwords do not match"
+			      }
+			    }
+			  }
+			</script>
+
+			<h3 class="govuk-heading-m govuk-!-margin-top-9">Make this page yourself / add this to your page</h3>
+			<p><a href="validation-page-template">Set the page up right</a></p>
+			<p>add your two input boxes (Nunjucks), or use the HTML version<img alt="source code of this page" width="100%" src="public/images/macro-passwords-match.png"></p>
+			<p>add the validation script block for these two fields<img alt="source code of this page" width="100%" src="public/images/validation-json-passwords-match.png"></p>
+
+			<p>the json tells the validator to 1) check that both password inputs have text entered, and 2) if text is entered in the password confirmation box, that it matches the password box.  The order of these validation checks gives this behaviour.</p>
+
+      <p>View the source of this page in the browser, or <span class="govuk-visually-hidden">view the page source code</span> <a href="https://github.com/LandRegistry/govuk-prototype-kit-form-validation/blob/master/app/views/validation-confirmation.html"> on github</a></p>
+
+
+    </div>
+</div>
+
+{% endblock %}

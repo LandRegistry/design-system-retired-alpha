@@ -1,0 +1,70 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Casework - a coded prototype - a concept/test
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Casework prototpye
+        <span class="govuk-caption-xl">a concept / test of a coded proto.</span>
+      </h1>
+
+      <h2 class="govuk-heading-m">version 2 - 3 DJPs...</h2>
+      <p class="govuk-body-l">Storing basic application data (title number, abr, application type).  Allow the user to do 3 available DJP applications.</p>
+      <p>4 pages, with the task page being templatised to load basic data dynamically. data is set up and manipulated in the routes file (we could make this 3 or 2 pages)</p>
+      <p><a href="three-djp-loop/">try it</a></p>
+      <p><a href="session/stored-data">see the session data being set and manipulated</a> - open this in a new window/tab before you start, refresh after each link/button/page</p>
+
+      <h2 class="govuk-heading-m">version 1 - whats the least...</h2>
+      <p class="govuk-body-l">Copy of html and css (and screenshots) from preview environment.</p>
+      <p>Requires minimal tweaks - change the path to to the css file and the logo file</p>
+
+      <p>useful to:
+      	<ul class="govuk-list govuk-list--bullet">
+      		<li><a href="flat-ap-files/">demonstrate what has been made</a></li>
+      		<li>make basic protoypes out of - easy to <a href="flat-ap-files/flow-01/start-page-01.html">stitch a number of these files together</a></li>
+      		<li>tinker with html and css changes</li>
+      	</ul>
+      </p>
+
+       <p>downsides:
+      	<ul class="govuk-list govuk-list--bullet">
+      		<li>no interactive behaviour - like validation</li>
+      		<li>longer user flows, like multiple applications and interactive behaviour is time consuming - have to make many pages/the same change to many copies of a page</li>
+      	</ul>
+      </p>
+
+
+      <!-- <h3 class="govuk-heading-m">heading 3</h3> -->
+      <!-- <p>This is code to implement form validation in the kit, with examples of different types of validation you can do - the validation code can be copied and used in your prototype.</p> -->
+
+
+      <hr>
+
+      <h2 class="govuk-heading-m">tools/example code for this kit - casework</h2>
+      <ul class="govuk-list govuk-list--bullet">
+      	<li><a href="/session">reading/writing casework session data</a></li>
+      </ul>
+      <hr>
+
+      <h2 class="govuk-heading-m">Example code for protoyping</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+      	<li><a href="/form-validation/">form validation - for gov kit</a></li>
+      	<li><a href="/session/example/admin.html">reading/writing session data examples</a></li>
+        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
+        <li>
+          <a href="https://design-system.service.gov.uk">
+            GOV.UK Design System
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+{% endblock %}

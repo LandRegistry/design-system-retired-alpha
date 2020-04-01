@@ -1,0 +1,52 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Form validation in the GOV.UK Protoype kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        The GOV.UK Prototype Kit with validation
+        <span class="govuk-caption-xl">Built in kit {{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+
+
+      <h2 class="govuk-heading-l">Form validation - how to</h2>
+
+      <h3 class="govuk-heading-m">What this is</h3>
+      <p>This is code to implement form validation in the kit, with examples of different types of validation you can do - the validation code can be copied and used in your prototype.</p>
+
+      <h3 class="govuk-heading-m">What this isn't</h3>
+      <p>This isn't a guide as to when to use each type of component, and not what the error messages should be.  For your protoype you should get <a href="https://design-system.service.gov.uk/components/">the latest guidance and component HTML/Nunjucks macros from the design system</a></p>
+
+			<h3 class="govuk-heading-l">Lets get started</h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>form <a href="validation-example">validation demonstration</a></li>
+        <li><a href="validation-documentation">including the code in your kit and validating form inputs</a></li>
+      </ul>
+
+      <div class="govuk-inset-text">
+      	<p>This example code is built in the current kit - {{releaseVersion}} - March 2020.  You could use this repo as a starting point for your protoype.  But the gov kit will change - so always make a call as to whether to <a href="https://govuk-prototype-kit.herokuapp.com/docs">use the latest kit from the design system</a>. How do i know <a href="https://github.com/alphagov/govuk-prototype-kit/releases">what version number the current gov kit is?</a></p>
+      	<p>If you are using <a href="https://github.com/LandRegistry/govuk-prototype-kit-form-validation">this repo/copy of the kit</a> as the basis of your prototype you don't need to follow the setup guide.  Just <a href="validation-documentation.html#component-rules">look at the validcation rules</a> section and find pages that work and copy the code you need</p>
+      </div> 
+
+      <hr>
+
+      <h2 class="govuk-heading-m">Standard kit examples and documentation</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
+        <li>
+          <a href="https://design-system.service.gov.uk">
+            GOV.UK Design System
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+{% endblock %}

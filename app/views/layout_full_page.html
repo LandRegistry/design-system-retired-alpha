@@ -1,0 +1,11 @@
+{% extends "layout_generic.html" %}
+
+
+{% block main %}
+  <div class="govuk-width-container {{ containerClasses }}">
+    {% block beforeContent %}{% endblock %}
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+{% endblock %}
