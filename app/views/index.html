@@ -5,81 +5,109 @@
   Design system - alpha
 {% endblock %}
 
+{% block appnav %}
+	{% include "./includes/_appnav.njk" %}
+{% endblock %}
+
 {% block content %}
+<div style="background-color: #87c426; padding-top:30px; padding-bottom:30px;">
+	<div class="govuk-grid-row" style="max-width: 1100px;margin-right: auto; margin-left: auto;">
+	  <div class="govuk-grid-column-full" >
+	    <h1 class="govuk-heading-xl" style="color: white;">
+	      Design and build digital services
+	      <span class="govuk-caption-m" style="color: white;"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+	    </h1>
+	    <p class="govuk-body-l" style="color: white;">A library of proven, reusable assets, for protoyping and building exemplary land registration services - for the public, professionals, and the staff that assure and maintain the land and property register</p>
+	  </div>
+	</div>
+</div>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">
-      Design system - alpha
-      <span class="govuk-caption-xl">testing ideas for an HMLR design system</span>
-    </h1>
+<div class="govuk-grid-row" style="max-width: 1100px; margin-right: auto; margin-left: auto; background-color: #f8f8f8;">
+  <div class="govuk-grid-column-full">
+  	<div class="govuk-grid-row" style="padding-top:30px;">
+		 	<div class="govuk-grid-column-one-third">
+		 		<a href="/get-started/" class="promo-wrapper">
+		 			<div class="promo-content">
+						<h2 class="govuk-heading-m promo-heading">Get started</h2>
+		    		<p>Prototyping and building digital services</p>
+		 			</div>
+		 		</a>
+		 	</div>
+		 	<div class="govuk-grid-column-one-third">
+		 		<a href="/styles/" class="promo-wrapper">
+		 			<div class="promo-content">
+						<h2 class="govuk-heading-m promo-heading">Styles</h2>
+		    		<p>Make your service look and feel right</p>
+		 			</div>
+		 		</a>
+		 	</div>
+		 	<div class="govuk-grid-column-one-third">
+		 		<a href="/components/" class="promo-wrapper">
+		 			<div class="promo-content">
+						<h2 class="govuk-heading-m promo-heading">Components</h2>
+		    		<p>Reusable elements of the user interface</p>
+		 			</div>
+		 		</a>
+		 	</div>
+		</div>
 
-    <h2 class="govuk-heading-m">Introduction</h2>
-    <p class="govuk-body-l"></p>
-    <p>Inspired by the best bits of other design systems, manuals and guides such as:</p>
-    <ul class="govuk-list govuk-list--bullet">
-    	<li><a href="https://design-system.service.gov.uk">GOVUK design system</a></li>
-    	<li><a href="https://service-manual.nhs.uk">NHS Digital Service Manual</a></li>
-    </ul>
-    <p>this is prototype code - knocked up to illusrate ideas, not how you'd really build this app</p>
-    <p><a href="">take me to the thing</a></p>
+		<div class="govuk-grid-row" style="padding-top:30px;">
+		 	<div class="govuk-grid-column-one-third">
+		 		<a href="/patterns/" class="promo-wrapper">
+		 			<div class="promo-content">
+						<h2 class="govuk-heading-m promo-heading">Patterns</h2>
+		    		<p>Patterns are tested and agreed solutions to common needs</p>
+		 			</div>
+		 		</a>
+		 	</div>
+		 	<div class="govuk-grid-column-one-third">
+		 		<a href="/content/" class="promo-wrapper">
+		 			<div class="promo-content">
+						<h2 class="govuk-heading-m promo-heading">Content</h2>
+		    		<p>Content that everyone understands</p>
+		 			</div>
+		 		</a>
+		 	</div>
+		 	<div class="govuk-grid-column-one-third">
+		 		<a href="/data/" class="promo-wrapper">
+		 			<div class="promo-content">
+						<h2 class="govuk-heading-m promo-heading">Data and interfaces</h2>
+		    		<p>Join all the pieces together with realistic data</p>
+		 			</div>
+		 		</a>
+		 	</div>
+		</div>
 
+		<div class="govuk-grid-row" style="padding-top:30px;">
+		 	<div class="govuk-grid-column-one-third">
+		 		<a href="/accessibility/" class="promo-wrapper">
+		 			<div class="promo-content">
+						<h2 class="govuk-heading-m promo-heading">Accessibility</h2>
+		    		<p>How to make digital services that work for everyone</p>
+		 			</div>
+		 		</a>
+		 	</div>
+		 	<div class="govuk-grid-column-one-third">
+		 		<a href="/users/" class="promo-wrapper">
+		 			<div class="promo-content">
+						<h2 class="govuk-heading-m promo-heading">Users</h2>
+		    		<p>Understand the people we make things for</p>
+		 			</div>
+		 		</a>
+		 	</div>
+		 	<div class="govuk-grid-column-one-third">
+		 		<a href="/about/" class="promo-wrapper">
+		 			<div class="promo-content">
+						<h2 class="govuk-heading-m promo-heading">Contribute</h2>
+		    		<p>Help make this library better, give designers your feedback</p>
+		 			</div>
+		 		</a>
+		 	</div>
+		</div>
 
-
-
-
-    <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-          Writing well for the web
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-      <p class='govuk-body'>This is the content for Writing well for the web.</p>
-    </div>
-  </div>
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-          Writing well for specialists
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-      <p class='govuk-body'>This is the content for Writing well for specialists.</p>
-    </div>
-  </div>
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
-          Know your audience
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-      <p class='govuk-body'>This is the content for Know your audience.</p>
-    </div>
-  </div>
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
-          How people read
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-      <p class='govuk-body'>This is the content for How people read.</p>
-    </div>
   </div>
 </div>
 
-  </div>
-</div>
+
 
 {% endblock %}

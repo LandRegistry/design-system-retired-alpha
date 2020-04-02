@@ -1,0 +1,28 @@
+.app-content h4, .app-content h5, .app-content h6, .app-content p, .app-content ul:not(.app-tabs), .app-content ol, .app-content img, .app-content video, .app-content .app-table--constrained {
+    max-width: 38em;
+}
+
+.app-navigation__list-item--current {
+	border-bottom: 4px solid #87c426;
+}
+
+.promo-wrapper {
+	background-color: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 0 0 #87c426;
+  display: block;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+}
+
+.promo-content {
+	padding: 32px;
+}
+
+.promo-heading {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 16px;
+  text-decoration: underline;
+}

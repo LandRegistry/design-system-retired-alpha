@@ -1,0 +1,39 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Cookie page
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Cookie page
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+    <p>Cookie page template and notes on what data can be collected and help users opt out. GDPR compliant.</p>
+
+    <h2 class="govuk-heading-m">Template cookie statements</h2>
+
+    <p>Inspired by the best bits of other design systems, manuals and guides such as:</p>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="">example 1</a></li>
+    	<li><a href="">example 2</a></li>
+    </ul>
+    
+
+  </div>
+</div>
+
+{% endblock %}

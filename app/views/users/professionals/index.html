@@ -1,0 +1,59 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Professionals
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Professionals
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+
+    <h2 class="govuk-heading-l">Professional user groups</h2>
+
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="#conv1">Conveyancers - acting for the buyer</a></li>
+    	<li><a href="#conv2">Conveyancers - acting for the seller</a></li>
+    	<li><a href="#conv3">Conveyancers - acting for the mortgage lender to the buyer</a></li>
+    	<li><a href="#lenders">Lenders - Banks and Building societies</a></li>
+    	<li><a href="#landlords">Landlords</a></li>
+    	<li><a href="#builders">House Builders</a></li>
+    </ul>
+
+    <h3 class="govuk-heading-m" id="conv1">Conveyancers - acting for the buyer</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h3 class="govuk-heading-m" id="conv2">Conveyancers - acting for the seller</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h3 class="govuk-heading-m" id="conv3">Conveyancers - acting for the mortgage lender to the buyer</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h3 class="govuk-heading-m" id="lenders">Lenders - Banks and Building societies</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+    <h3 class="govuk-heading-m" id="landlords">Landlords</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+		<h3 class="govuk-heading-m" id="landlords">House Builders</h3>
+    <p>synopsis of this group of people and links on to further detailed information managed by the User Research community of practice</p>
+
+
+  </div>
+</div>
+
+{% endblock %}

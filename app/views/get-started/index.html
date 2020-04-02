@@ -1,0 +1,43 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Get Started
+{% endblock %}
+
+
+{% block appnav %}
+	{% include "./_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include "./_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Get started
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+    <p>The examples in this system allow you to protoype and create real services - code and content</p>
+
+    <p>Guides to get started:</p>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="">protoyping</a></li>
+    	<li><a href="">in prodcution</a></li>
+    </ul>
+
+    <p>Designing for:</p>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="/govuk">GOV.UK services</a></li>
+    	<li><a href="/landregistry">HM Land Registry public and professional servces</a></li>
+    	<li><a href="staff">Casework</a></li>
+    </ul>  
+
+  </div>
+</div>
+
+{% endblock %}

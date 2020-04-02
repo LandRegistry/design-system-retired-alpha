@@ -1,0 +1,36 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - styles
+{% endblock %}
+
+
+{% block appnav %}
+	{% include "./_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include "./_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      About the library
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+    <p class="govuk-body-l">Help make this library of resources better</p>
+
+    <p class="govuk-body">This is a set of ideas about what a digital design system - a library of resources - could be</p>
+
+    <p>Speak to the Design community, give us feedback, find us on slack, on this email, or speak to Sam, Joe, Laura, James, or any designer</p>
+
+        
+
+  </div>
+</div>
+
+{% endblock %}

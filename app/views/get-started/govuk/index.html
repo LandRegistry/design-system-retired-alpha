@@ -1,0 +1,56 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Gov.uk services
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Designing for GOV.UK
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+
+    <h2 class="govuk-heading-m">Get started</h2>
+ 		<p><a href="">Browse the manual with only the guidance for GOV.UK services</a> (hide all HMLR professional and casework services content).  This may mean very little content, but you will see experimental solutions not yet published by gov.  You may toggle this on and off on any page in this manual.</p>
+
+		<h2 class="govuk-heading-m">Overview</h2>
+    <p>Follow the advice published by GOV.UK for designing sevrices to be hosted on GOV.UK or service.gov.uk domain</p>
+
+    <p>This manual may contain patterns developed by us being used on gov.uk services we have built, but not yet published in the gov.uk design system.  They will be noted as experimental.  We encourage their use, where appropriate, to test further how well they work, so we can contribute to the UK and international government communites.  <a href="">find out how you can help with that</a></p>
+
+    <p>You may also use non gov.uk patterns as a starting point to experiment if they would work for gov.uk users.  Discuss their use with the design community of practice - for help using them, and to help us develop them further. <a href="">find out how to discuss this with the design community</a></p>
+
+    <h2 class="govuk-heading-m">GOV.UK design links</h2>
+    <p class="govuk-body-l"></p>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="https://design-system.service.gov.uk">GOVUK design system</a></li>
+    	<li><a href="https://www.gov.uk/service-manual">GOVUK Service Manual</a></li>
+    	<li><a href="https://www.gov.uk/guidance/content-design">GOVUK Content design</a></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">UK government departments</h2>
+    <ul class="govuk-list govuk-list--bullet">
+    	<li><a href="">Registers of Scotland design manual</a></li>
+    	<li><a href="">Home Office design system</a></li>
+    	<li><a href="">NHS Service Manual</a></li>
+    	<li><a href="">DWP design system</a></li>
+    	<li><a href="">DVLA pattern library</a></li>
+    </ul>
+
+  </div>
+</div>
+
+{% endblock %}

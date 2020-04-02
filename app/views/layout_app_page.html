@@ -2,10 +2,24 @@
 
 
 {% block main %}
-  <div class="govuk-width-container {{ containerClasses }}">
-    {% block beforeContent %}{% endblock %}
-    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
-      {% block content %}{% endblock %}
-    </main>
+  <div class="govuk-width-container {{ containerClasses }}" style="max-width: 1100px;">
+  	<div class="govuk-grid-row" style="background-color: #f8f8f8;">
+  		<div class="govuk-grid-column-full" style="margin-top:-19px;">
+  			{% block appnav %}{% endblock %}
+  		</div>
+  	</div>
+
+  	<div class="govuk-grid-row">
+  		<div class="govuk-grid-column-one-quarter">
+  			{% block appsidebar %}{% endblock %}
+  		</div>
+
+  		<div class="govuk-grid-column-three-quarters">
+		    {% block beforeContent %}{% endblock %}
+		    <main class="govuk-main-wrapper {{ mainClasses }} app-content" style="padding-top:30px;" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+		      {% block content %}{% endblock %}
+	    	</main>
+	    </div>
+    </div>
   </div>
 {% endblock %}

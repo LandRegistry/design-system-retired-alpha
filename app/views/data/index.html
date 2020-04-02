@@ -1,0 +1,45 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Data and APIs
+{% endblock %}
+
+
+{% block appnav %}
+	{% include "./_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include "./_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Data, APIs, Machine learning
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+    <p class="govuk-body-l">To create realistic prototypes and test code quickly and thoroughly:</p>
+
+    <p><strong>Data</strong>: Anonymous, realistic data to use in prototypes and for testing whats being built: registers, digital applications</p>
+
+    <p><strong>Analytics</strong>: examples to capture analytics from prototpyes and in production and display them in <a href="/patterns/dashboards/">service dashboards</a></p>
+
+    <p><strong>Schemas</strong>: Schemas and example data to integrate with and test interfaces to existing infrastructural components</p>
+
+    <p><strong>API's</strong>: Public, private and internal APIs - the schemas and example data to get information from, submit to - to test intefaces to existing infrastructural components</p>
+
+    <p><strong>Third party interfaces</strong>: interface schemas and example data to get realistic sample data from, and sumbit to, third party test components and services.  like notifications, payments, licensed conveyancers, marriage register</p>
+
+    <p><strong>Machine learning</strong>: Machine learning, AI, algorithms, sample data and models to test and explore what our machine learning tools can do</p>
+
+    
+    
+
+  </div>
+</div>
+
+{% endblock %}

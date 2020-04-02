@@ -1,4 +1,4 @@
-<meta property="og:url" content="https://github.com/hmlandregistry/"/>
+<meta property="og:url" content="https://github.com/LandRegistry/design-system-alpha"/>
 <meta property="og:site_name" content="Design System of HM Land Registry"/>
 <meta property="og:title" content="{% if pageTitle %}{{ pageTitle }} - Design System of HM Land Registry{% else %}Design System of HM Land Registry{% endif %}"/>
 <meta property="og:description" content="{% if pageDescription %}{{pageDescription}}{% else %}Design and build digital services for HM Land Registry. Things you need to make consistent, usable services that put people first.{% endif %}"/>
@@ -16,3 +16,7 @@
 {% for stylesheetUrl in extensionConfig.stylesheets %}
   <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
 {% endfor %}
+
+<header class="hmlr-header hmlr-header--dark header-width">
+  <div class="hmlr-header__inner"><a href="/"><span class="hmlr-header__title">HM Land Registry Digital Design System</span></a></div>
+</header>

@@ -1,0 +1,38 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Users
+{% endblock %}
+
+
+{% block appnav %}
+	{% include "./_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include "./_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Users
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+    <p>Insights about the users and potential users of HM Land Registry services and Casework systems, in order design new services and improve existing ones</p>
+
+    <p>Information that can be further tested, or used to improve existing services</p>
+
+    <p>Insights gained from, and assumptions being tested with, qualitative research, and quantitative research</p>
+
+    <p>These pages of the manual provide a high level overview of users of land registration services, their main aims, goals, tasks, problems, needs.  This is to help service teams and designers quickly get a good overview of their audiences. It enables better prototypes to be created more quickly - uncovering deeper and additional insights from user more quickly</p>
+
+		<p>Information gathered about individual patterns and components is summarised and further detail linked to in each pattern and component.</p>
+
+  </div>
+</div>
+
+{% endblock %}

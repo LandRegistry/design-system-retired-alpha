@@ -1,0 +1,35 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Links
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Production
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+    <p>These guides explain how to set up your project so you can start using the styles and coded examples in production, for:
+    	<ul class="govuk-list govuk-list--bullet">
+    	<li>GOV.UK, using the <a href="https://design-system.service.gov.uk/get-started/production/">GOV.UK Production guide</a></li>
+    	<li>HM Land Registry professional services, using <a href="#">our professional services production guide</a></li>
+    	<li>Casework systems, using <a href="#">our Casework services production guide</a></li>
+    </ul>
+
+  </div>
+</div>
+
+{% endblock %}

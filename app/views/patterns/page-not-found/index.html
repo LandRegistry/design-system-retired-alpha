@@ -1,0 +1,35 @@
+
+{% extends "layout_app_page.html" %}
+
+{% block pageTitle %}
+  Design system - Page not found
+{% endblock %}
+
+
+{% block appnav %}
+	{% include ".././_partials/_appnav.njk" %}
+{% endblock %}
+
+{% block appsidebar %}
+	{% include ".././_partials/_appsidebar.njk" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      Page not found
+      <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
+    </h1>
+    <p>Also knowns as a 404 page, these are pages that the users has navigated to, and do not (have never) existed, for example they have mis-typed in a URL or followed a broken link.</p>
+    <p>Ensure that the user has a way forward from this page, and a way to report a problem if they followed a legitimate link to the page, from anywhere, for example: one of our services, any public or professional services, an email or text.
+    <p>404 pages are not for pages that we have moved, permanently or temporarily</p>
+
+    
+    
+
+  </div>
+</div>
+
+{% endblock %}
