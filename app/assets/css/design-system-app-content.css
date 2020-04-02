@@ -26,3 +26,119 @@
   margin-bottom: 16px;
   text-decoration: underline;
 }
+
+/*casework - stick in a different sheet and maybe add a prefix to the classes - or a wrapper*/
+
+.notification-container{
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    min-height:120px;
+    padding-bottom:20px;
+    width:100%;
+    padding:15px 0;
+}
+
+.notification{
+    background-color:#eef3f7;
+    border:3px solid #1d70b8;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    font-size:16px;
+    font-weight:700;
+    -webkit-box-pack:start;
+    -ms-flex-pack:start;
+    justify-content:flex-start;
+    padding:25px 20px 25px 0;
+    width:100%;
+}
+
+.notification .notification-text{
+    margin-left:15px;
+}
+
+.notification.notification-success{
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+}
+.notification .govuk-heading-s{
+    line-height:1;
+}
+.error-message-container{
+    margin-left:20px;
+}
+.notification-close{
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+    margin-left:auto;
+    text-decoration:underline;
+}
+.notification-close.govuk-link:focus{
+    background:#fd0;
+}
+.notification-close__inline{
+    font-size:19px;
+    padding:0;
+    color:#005ea5;
+    text-decoration:underline;
+}
+.notification-close__inline:hover{
+    color:#003078;
+}
+.notification-point,.hmlr-theme .notification-reject,.hmlr-theme .notification-success{
+    background-color:#cce6d8;
+    border-color:#01823b;
+}
+.notification-success--small{
+    background-color:#f5faf7;
+    border-color:#01823b;
+}
+.notification-warning{
+    background-color:#f9f1df;
+    border-color:#e7b94d;
+}
+.notification-error{
+    background-color:#fff6f7;
+    border-color:#b10e1e;
+}
+
+.hmlr-notification-panel h3{
+    font-weight:400;
+}
+
+.notification-icon-container{
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+}
+.notification-icon-container.notification-error{
+    background-color:#b10e1e;
+    margin:-25px 0;
+    width:40px;
+}
+.notification-icon-container.notification-error .notification-icon{
+    background-color:#fff;
+    background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M31.708 25.708L22 16l9.708-9.708a1 1 0 000-1.414L27.122.292a1 1 0 00-1.414-.001L16 9.999 6.292.291a.998.998 0 00-1.414.001L.292 4.878a1 1 0 000 1.414L10 16 .292 25.708a.999.999 0 000 1.414l4.586 4.586a1 1 0 001.414 0L16 22l9.708 9.708a1 1 0 001.414 0l4.586-4.586a.999.999 0 000-1.414z'/%3E%3C/svg%3E");
+    background-position:50%;
+    background-repeat:no-repeat;
+    background-size:14px;
+    border-radius:50%;
+    display:block;
+    height:24px;
+    margin-left:-3px;
+    width:24px;
+}
+
