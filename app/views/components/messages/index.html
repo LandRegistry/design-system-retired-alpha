@@ -22,15 +22,72 @@
       Messages
       <span class="govuk-caption-m"><strong class="govuk-tag govuk-phase-banner__content__tag">alpha</strong> ideas for an HMLR design system</span>
     </h1>
-    <p>proven, reusable assets, for protoyping and building exemplary land registration services - used by the public and professionals, and the staff that assure and maintain the land and property register</p>
+    <p>Messages let users know whats going, as a result of their action, or something that has happened in the service</p>
+  	<p>This is different to <a href="/components/error-message/">error messages when validating information entered into forms</a>.  And not http error code pages like <a href="/patterns/page-not-found/">page not found</a> and <a href="/patterns/service-unavailiable/">service unavailable</a>.</p>
 
-    <h2 class="govuk-heading-m">Introduction</h2>
-    <p class="govuk-body-l"></p>
-    <p>Inspired by the best bits of other design systems, manuals and guides such as:</p>
-    <ul class="govuk-list govuk-list--bullet">
-    	<li><a href="https://design-system.service.gov.uk">GOVUK design system</a></li>
-    	<li><a href="https://service-manual.nhs.uk">NHS Digital Service Manual</a></li>
-    </ul>
+  	<h2 class="govuk-heading-l">example</h2>
+		<div class="govuk-tabs" data-module="govuk-tabs">
+		  <h2 class="govuk-tabs__title">
+		    Contents
+		  </h2>
+		  <ul class="govuk-tabs__list">
+		    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+		      <a class="govuk-tabs__tab" href="#casework">
+		        Casework
+		      </a>
+		    </li>
+		    <li class="govuk-tabs__list-item">
+		      <a class="govuk-tabs__tab" href="#hmlr">
+		        HMLR
+		      </a>
+		    </li>
+		    <li class="govuk-tabs__list-item">
+		      <a class="govuk-tabs__tab" href="#govuk">
+		        Gov.uk
+		      </a>
+		    </li>
+		  </ul>
+		  <div class="govuk-tabs__panel" id="casework">
+		    <h2 class="govuk-heading-l">Casework messages</h2>
+		  	<div class="example-wrapper">
+
+<h3 class="govuk-heading-m">success messages</h3>
+<div class="notification-container">
+  <div class="notification notification-success" data-testid="notification">
+    <div class="notification-icon-container notification-success"><span class="notification-icon"></span></div>
+    <span class="govuk-heading-s govuk-!-margin-bottom-0">Application processing completed</span>
+  </div>
+</div>
+
+<div class="notification-container">
+  <div class="notification notification-success" data-testid="notification">
+    <div class="notification-icon-container notification-success"><span class="notification-icon"></span></div>
+    <span class="govuk-heading-s govuk-!-margin-bottom-0">Application sent to ESRV</span>
+  </div>
+</div>
+		  	</div>
+
+		  </div>
+		  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="hmlr">
+		    <h2 class="govuk-heading-l">HMLR messages</h2>
+		   
+
+		  </div>
+		  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="govuk">
+		    <h2 class="govuk-heading-l">gov.uk messages</h2>
+		    
+		  </div>
+		</div>
+
+		<h2 class="govuk-heading-l">When to use this component</h2>
+
+		<p>Use the message panel where the user will be looking - for example at the top of the page, or above where the user focus is.  Users find it easy to miss feedback messages, expecially if not in view, eg on a mobile</p>
+
+		<p>More research needs to be done, to validate these patterns and to explore other ways of informing the user, such as with a modal message</p>
+
+		<h2 class="govuk-heading-l">How it works</h2>
+
+		<p>words</p>
     
     
 
