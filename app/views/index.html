@@ -7,6 +7,12 @@
 
 {% block content %}
 
+<style>
+.govuk-footer {
+	background: none;
+}
+</style>
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl">Design System
@@ -14,13 +20,13 @@
        the road to</span>
     </h1>    
 
-    <p>We are working towards a Design System for HM Land Registry digital teams - as most people will imagine it - a visible library of designs and guidance. Which is the tip of an iceberg</p>
+    <p>We are working towards a Design System for HM Land Registry digital teams - as most people will imagine it - a visible library of designs and guidance. Which is the tip of an iceberg.</p>
 
     <h2 class="govuk-heading-l"><a href="advice">Advice to follow for all new work</a></h2>
-    <p>This is a hierarchy of advice to follow when creating new services, products or systems, for GOV.UK services, professional users and staff</p>
+    <p>This is a hierarchy of advice to follow when creating new services, products or systems, for GOV.UK services, professional users and staff.</p>
     <h3 class="govuk-heading-m">Contributing to the advice</h3>
     <p>Thank you to everyone who provided their work and thoughts so far.  Next, we need this to become a whole practice (and cross practice) thing.</p>
-  	<p>All feedback - about anything, anytime, is welcome.  During this next phase we will also become more explicit in seeking feedback about what you need from a Design System, and if it's working</p>
+  	<p>All feedback - about anything, anytime, is welcome.  During this next phase we will also become more explicit in seeking feedback about what you need from a Design System, and if it's working.</p>
     <p><b>Feedback to</b>: Andy Porter and Laura Clifford, by email.  Also in the documentation as explained there.</p>
 
     <h2 class="govuk-heading-l">What's coming next</h2>
@@ -47,15 +53,49 @@
 
     <h2 class="govuk-heading-l">What have we learnt so far
     <span class="govuk-caption-l">that indicates what the Design System could be as it matures</span></h2>
-    <p>More detail to add about what we learnt in this 'what do we have now', collection phase</p>
+    <p>More detail to add about what we learnt in this 'what do we have now', collection phase.</p>
 
 
     <h3 class="govuk-heading-m">What did we do before this?</h3>
     <p>We explored ideas of <a href="alpha-ds">what a useful Design System for HM Land Registry could be - what it might contain</a>, how might people reuse the information, and how we might build and maintain it.</p>
 
-    <p>More detail to add here about what we learnt form that</p>
+    <p>More detail to add here about what we learnt from that.</p>
 
   </div>
 </div>
 
+{% endblock %}
+
+
+{% block footer %}
+<footer class="govuk-footer app-footer app-footer--full" role="contentinfo">
+  <div class="govuk-width-container app-width-container">
+       
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+        <h2 class="govuk-footer__heading govuk-heading-m govuk-visually-hidden">Whats happening with the system</h2>
+        
+          <ul class="govuk-footer__inline-list">             
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="/history">
+                  Content updates
+                </a>
+              </li>
+            
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="/weeknotes">
+                  Project updates
+                </a>
+              </li>             
+          </ul>
+           
+<!--             <div class="govuk-footer__meta-custom">
+              Built by the <a href="/design-system-team" class="govuk-footer__link">GOV.UK Design System team</a>
+            </div> -->
+      </div>
+
+    </div>
+  </div>
+</footer>
 {% endblock %}
