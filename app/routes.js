@@ -10,28 +10,45 @@ router.use('/node_modules', express.static('node_modules'))
 // Design system
 // /////////////////////////
 
+
+// //////////////////////////////
+// key versioned pages that need routes to always go to latest version
+// //////////////////////////////
+
 // index page is versioned - in folders beta/vx
 // Always make default home route go to latest beta version of the design system
 router.get('/', function (req, res) {
-  res.redirect('/beta/v2/')
+  res.redirect('/beta/v3/')
 })
 
 // advice page is versioned - in folders beta/vx
 // Always make default advice route go to latest beta version of the advice page
 router.get('/advice', function (req, res) {
-  res.redirect('/beta/v2/advice')
+  res.redirect('/beta/v3/advice')
 })
 
+// ///////////////////////
+// end key versioned pages
+// ///////////////////////
 
-// weeknotes is not versioned, so 
-// lets make it easy for people to do href="weeknotes" from any version, and redirect to static location
+
+// weeknotes is not versioned, so lets make it easy for people to... 
+// ... do href="weeknotes" from any version, or "/weeknotes" and redirect to static location
 router.get('/weeknotes', function (req, res) {
   res.redirect('/beta/weeknotes/weeknotes')
 })
 
-// weeknotes is not versioned, so 
-// lets make it easy for people to do href="weeknotes" from any version, and redirect to static location
+router.get('/beta/v*/weeknotes', function (req, res) {
+  res.redirect('/beta/weeknotes/weeknotes')
+})
+
+// history is not versioned, so lets make it easy for people to... 
+// ... do href="history" from any version, or "/history" and redirect to static location
 router.get('/history', function (req, res) {
+  res.redirect('/beta/history/history')
+})
+
+router.get('/beta/v*/history', function (req, res) {
   res.redirect('/beta/history/history')
 })
 
