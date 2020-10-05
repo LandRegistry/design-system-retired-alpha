@@ -1,0 +1,57 @@
+.app-content h4, .app-content h5, .app-content h6, .app-content p, .app-content ul:not(.app-tabs), .app-content ol, .app-content img, .app-content video, .app-content .app-table--constrained {
+   max-width: 38em;
+}
+
+.app-navigation__list-item--current {
+	border-bottom: 4px solid #87c426;
+}
+
+/*.promo-wrapper {
+	background-color: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 0 0 #87c426;
+  display: block;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+}*/
+
+.promo-wrapper {
+	background-color: #fff;
+  border: 1px solid #87c426;
+  border-bottom: 4px solid #87c426;
+  display: block;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+}
+
+.promo-wrapper:hover {
+	background-color: #fff;
+  border: 1px solid #426114;
+  border-bottom: 4px solid #426114;
+  display: block;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+}
+
+/*#426114*/
+
+.promo-content {
+	padding: 32px;
+}
+
+.promo-heading {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 16px;
+  color:#426114;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+}
+
+.promo-wrapper:hover > .promo-content > .promo-heading {
+  text-decoration-line: none;
+}
+
