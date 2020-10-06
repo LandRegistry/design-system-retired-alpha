@@ -1,0 +1,65 @@
+.app-content h4, .app-content h5, .app-content h6, .app-content p, .app-content ul:not(.app-tabs), .app-content ol, .app-content img, .app-content video, .app-content .app-table--constrained {
+   max-width: 38em;
+}
+
+
+/* ************************ */
+/* * top level navigation * */
+/* ************************ */
+.app-navigation__list-item--current {
+	border-bottom: 4px solid #87c426;
+}
+
+/* **************************** */
+/* * home page promoted items * */
+/* **************************** */
+
+.promo-wrapper {
+	background-color: #fff;
+  border: 1px solid #87c426;
+  border-bottom: 4px solid #87c426;
+  display: block;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+  /*margin-bottom: 32px;*/
+}
+
+.promo-wrapper:hover {
+	background-color: #fff;
+  border: 1px solid #426114;
+  border-bottom: 4px solid #426114;
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+.promo-content {
+	padding: 32px;
+}
+
+.promo-heading {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 16px;
+  color:#426114;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+}
+
+.promo-wrapper:hover > .promo-content > .promo-heading {
+  text-decoration-line: none;
+}
+
+@media (max-width: 48.0525em) {
+  .promo-wrapper{
+    margin-bottom: 16px;
+  }
+}
+
+/* lists in promo items */
+.design-system-list--dash li:before {
+  content: "-"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+}
+

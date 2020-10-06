@@ -9,7 +9,7 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">Updates of the contents of the system
+    <h1 class="govuk-heading-xl">Updates to the contents of the system
     </h1>   
 
     <p class="govuk-lead">Brief details of changes published here.  For example, when <a href="/advice">advice to follow for all new work</a> has been changed, new sections published, or a change to the direction of the design system project work.</p> 
@@ -28,6 +28,19 @@
 
     <h2 class="govuk-heading-l">Changes to the system itself</h2>
 
+    <h3 class="govuk-heading-m" id="system-change-06-oct-2020">06 October 2020</h3>
+    <p>A Launchable thing - enough that people can see something, understand what it is, and start to use it and contribute.</p>
+    <p>Follow the project principles: work in the open; the system is owned by the whole practice; meet user needs; minimise barriers to contribution and collaboration; minimise the cost of change.</p>
+    <p>Version 3 changes:
+	    <ul class="govuk-list govuk-list--bullet">
+	  		<li>homepage, new and responsive (needs a little more work)</li>
+	  		<li>'whats new' page/summary. User need: what's new since I was last here</li>
+	  		<li>'whats being worked on', and 'how to help' summary/pages. User needs: I want to my experience, skills and knowledge to be utilised; I want agreed advice</li>
+	  		<li>consistent footer with navigation, that includes history of changes and project thinking/learning</li>	  		
+	  		<li>create beta template and style files, to seperate it from the alpha work, and make it easier to iterate and others to work on</li>
+	  	</ul>
+	  </p>
+
     <h3 class="govuk-heading-m" id="system-change-23-sep-2020">23 September 2020</h3>
     <p>Added a version history - now on version 2:
 	    <ul class="govuk-list govuk-list--bullet">
@@ -39,4 +52,47 @@
   </div>
 </div>
 
+{% endblock %}
+
+{% block footer %}
+<footer class="govuk-footer app-footer app-footer--full" role="contentinfo">
+  <div class="govuk-width-container app-width-container">
+       
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+        <h2 class="govuk-footer__heading govuk-heading-m govuk-visually-hidden">Whats happening with the system</h2>
+        
+          <ul class="govuk-footer__inline-list">
+        		<li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="/">
+                Home
+              </a>
+            </li>             
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="history">
+                Content updates
+              </a>
+            </li>
+          
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="weeknotes">
+                Project updates
+              </a>
+            </li>
+<!--             <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="weeknotes">
+                About
+              </a>
+            </li> -->             
+          </ul>
+           
+<!--             <div class="govuk-footer__meta-custom">
+              Built by the <a href="/design-system-team" class="govuk-footer__link">GOV.UK Design System team</a>
+            </div> -->
+      </div>
+
+    </div>
+  </div>
+</footer>
 {% endblock %}
