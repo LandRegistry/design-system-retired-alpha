@@ -2,19 +2,17 @@
    max-width: 38em;
 }
 
+
+/* ************************ */
+/* * top level navigation * */
+/* ************************ */
 .app-navigation__list-item--current {
 	border-bottom: 4px solid #87c426;
 }
 
-/*.promo-wrapper {
-	background-color: #fff;
-  border: 1px solid transparent;
-  box-shadow: 0 4px 0 0 #87c426;
-  display: block;
-  height: 100%;
-  position: relative;
-  text-decoration: none;
-}*/
+/* **************************** */
+/* * home page promoted items * */
+/* **************************** */
 
 .promo-wrapper {
 	background-color: #fff;
@@ -24,6 +22,7 @@
   height: 100%;
   position: relative;
   text-decoration: none;
+  /*margin-bottom: 32px;*/
 }
 
 .promo-wrapper:hover {
@@ -33,10 +32,7 @@
   display: block;
   height: 100%;
   position: relative;
-  text-decoration: none;
 }
-
-/*#426114*/
 
 .promo-content {
 	padding: 32px;
@@ -53,5 +49,11 @@
 
 .promo-wrapper:hover > .promo-content > .promo-heading {
   text-decoration-line: none;
+}
+
+@media (max-width: 48.0525em) {
+  .promo-wrapper{
+    margin-bottom: 16px;
+  }
 }
 
