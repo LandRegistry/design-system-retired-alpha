@@ -1,0 +1,122 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Design system - help out
+{% endblock %}
+
+{% block content %}
+
+<style>
+.govuk-footer {
+	background: none;
+}
+</style>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Help out</h1>    
+
+    <p class="govuk-body-l">Make it a whole practice effort.  Our collective, authoritative, knowledge, made public.</p>
+
+    <p>At this point there is a lot that can be improved - we're in a phase of creating a body of agreed, proven advice.  Feedback and comment on anything is welcome - most documents can be edited by everyone in the practice, the rest are comment only.</p>
+
+
+    <h2 class="govuk-heading-l">What is most needed</h2>
+
+    <h3 class="govuk-heading-m">Documenting new designs</h3>
+
+    <p>We took a snapshot of what's in production, over a few months.  That's already out of date. We need to find a way to keep on top of whats been designed, why, how it meets users needs, what didn't work, what needs more evidence, etc, etc.</p>
+
+    <p>We've (in the design practice) not prescribed a standard way of documentation - either if we need to demonstrate at an assessment, or to help each other out - to save repeating work.</p>
+
+    <p>For the design system we are mainly interested in what finally goes into the service/product/system.  Things you've tried inside the team, inside design, is of less interest - document all that in whatever way most works for you.</p>
+
+    <p>For a design system we need:
+			<ul class="govuk-list govuk-list--bullet">
+				<li><a href="advice#prod">ongoing updates to 'whats in use'</a>.  We need more examples and: why its designed as it is, if it's different to GOV advice - how and why, how well it works (evidence, e.g. usability testing, analytics, copied from elsewhere in gov), what you'd like to learn next about it (more users, different context/users, etc)</li>
+				<li>if no document exists yet for your component, pattern, or the topic you think is needed - just start one.  Either start or contact Andy Porter or Laura, to ask where to store this, or for a template</li>
+    		<li>however you do it, do document your work, and we can use it within the practice and design system later</li>
+    	</ul>
+    </p>
+
+    <h3 class="govuk-heading-m">Evidence about designs</h3>
+
+    <p>A good amount of usability testing goes on, before things are built.  Less goes on after code is shipped and there isn't much detailed analytical evidence.</p>
+
+    <p>Designs could be brilliant - but we've no idea.  We've all see our designs bomb once they meet a real user in a usability session.</p>
+
+    <p>We've no real idea how well <a href="advice#prod">whats currently been built</a> works.  This is slowing us down in saying - this advice is 'proven' - in this context with these users - copy it.</p>
+
+    <p>This is an area where we probably need the help of other practices. Talk to your user research colleagues, and performance analysts in your team - and together we can improve on what we currently know.</p>
+
+    <p>We need more evidence of:
+			<ul class="govuk-list govuk-list--bullet">
+				<li>how much usability testing, pre-production</li>
+				<li>usability testing post production</li>
+    		<li>analytics</li>
+    		<li>evidence from different types of users - especially those with accessibility needs</li>
+    		<li>more evidence of context in which it works</li>
+    		<li>where things don't work</li>
+    		<li>saying 'We don't know how well this works' is really helpful, and describing what you would like to see done</li>
+    		<li>what didn't work - designs we threw out</li>
+    	</ul>
+    </p>
+    <p>
+    	Evidence can be recorded in <a href="advice#prod">the 'whats in use' documents</a>, or just add a link there to your own teams (or other practices) work.
+    </p>
+
+
+    <h3 class="govuk-heading-m">Survey - design systems, what do you need?</h3>
+    <p>We'd like to understand more about - what should a design system be, how does it help people, do we need one? What should we prioritise - meet peoples needs.</p>
+    <p>Non designers, and designers who didn't complete the first survey, <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJ6bBLsyve2vuzQOV68adG3YaqtSf5pI2wTuPX66NxCI_knw/viewform?usp=sf_link">let us know: if you use a design system, or would like one</a> (no closing date yet; anonymous). Contact Andy Porter if any problem accessing.</p>
+
+
+  </div>
+</div>
+
+{% endblock %}
+
+
+{% block footer %}
+<footer class="govuk-footer app-footer app-footer--full" role="contentinfo">
+  <div class="govuk-width-container app-width-container">
+       
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+        <h2 class="govuk-footer__heading govuk-heading-m govuk-visually-hidden">Whats happening with the system</h2>
+        
+          <ul class="govuk-footer__inline-list">
+        		<li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="/">
+                Home
+              </a>
+            </li>             
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="history">
+                Content updates
+              </a>
+            </li>
+          
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="weeknotes">
+                Project updates
+              </a>
+            </li>
+<!--             <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="weeknotes">
+                About
+              </a>
+            </li> -->             
+          </ul>
+           
+<!--             <div class="govuk-footer__meta-custom">
+              Built by the <a href="/design-system-team" class="govuk-footer__link">GOV.UK Design System team</a>
+            </div> -->
+      </div>
+
+    </div>
+  </div>
+</footer>
+{% endblock %}
