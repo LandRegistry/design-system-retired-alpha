@@ -230,3 +230,46 @@
 
 
 {% endblock %}
+
+{% block footer %}
+<footer class="govuk-footer app-footer app-footer--full" role="contentinfo">
+  <div class="govuk-width-container app-width-container">
+       
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+        <h2 class="govuk-footer__heading govuk-heading-m govuk-visually-hidden">Whats happening with the system</h2>
+        
+          <ul class="govuk-footer__inline-list">
+        		<li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="/">
+                Home
+              </a>
+            </li>             
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="history">
+                Content updates
+              </a>
+            </li>
+          
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="weeknotes">
+                Project updates
+              </a>
+            </li>
+<!--             <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="weeknotes">
+                About
+              </a>
+            </li> -->             
+          </ul>
+           
+<!--             <div class="govuk-footer__meta-custom">
+              Built by the <a href="/design-system-team" class="govuk-footer__link">GOV.UK Design System team</a>
+            </div> -->
+      </div>
+
+    </div>
+  </div>
+</footer>
+{% endblock %}
