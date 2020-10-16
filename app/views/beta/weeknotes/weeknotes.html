@@ -16,6 +16,90 @@
 
     <h2 class="govuk-heading-l">Weeknotes</h2>
 
+    <h3 class="govuk-heading-m" id="weeknotes-16-oct-2020">16 October 2020</h3>
+
+    <p>Different sort of week - 2 days off and 2 days at UCD Gathering, so nothing 'made'.  Lots of interesting things learned and considered which are relevant here - because of UCD gathering talks.</p>
+    <h4 class="govuk-heading-s">Digital Scotland design system</h4>
+    <p>
+    	<ul class="govuk-list govuk-list--bullet">
+    		<li>similar look to gov design system</li>
+    		<li><a href="https://blogs.gov.scot/digital/2020/08/25/digital-scotland-design-system/">blogpost lists the benefits</a></li>
+    		<li>includes at the top level - accessibility and the backlog.  I like both these, both are important, and I especially the simplicity of the backlog</li>
+    		<li><a href="https://designsystem.gov.scot/get-started/analytics/">Analytics - in the Get Started section</a>.  Very important to be measuring stuff from the outset, and to be baked in, from the start</li>
+    	</ul>
+    </p>
+    <hr>
+
+    <h4 class="govuk-heading-s">Design debt</h4>
+    <p>There are, in a simplistic form (not going <a href="https://en.wikipedia.org/wiki/There_are_known_knowns">the full Donald Rumsfeld</a>), two sorts of debt:
+    	<ul class="govuk-list govuk-list--bullet">
+    		<li>known - that you know about when you ship</li>
+    		<li>un-forseen - that you didn't know about that's found out after you release (some is only ever found by users)</li>
+    	</ul>
+    </p>
+    <p>Its fine to have debt - making a conscious choice about it.  Its like using your credit card - you decide you gain more value overall, by 'realising' immediate value more quickly and paying back your debt later - maximising your overall gain.</p>
+    <p>Providing you pay debt back at a rate that doesn't exceed that short term value gained - then you are in overall 'profit'.  We all understand that basic model in our own lives with credit cards - even if we don't manage to achieve it.</p>
+    <p>You don't want un-forseen debt to overwhelm the value you are trying to realise.
+    </p>
+    <p>There will always be debt you didn't know about in advance.  You could probably get better at spotting it, but you will never see it all, much of it will be spotted by a user - for example a design that didn't solve the problem you hoped it would (an assumption you had).</p>
+    <p>You can learn to better see what you couldn't before - the wisdom of experience, if you choose to observe.  But there will always be some that cannot be predicted in advance, or is not worth the 'cost' - better to find it later.</p>
+  	<p>Perhaps also by measuring in production against what was known prior, you can start to find a base level of how much unforeseeable debt you will ship.  So you know how much, on average you get, but you don't know where it is - until later.  maybe a constant number/percent?</p>
+  	<p>How to get better at spotting debt in advance, and help actual design debt be paid back - increase the teams UX skills</p>
+  	<p>There are also ways to minimise debt in advance - by having proven designs to reuse.</p>   
+    <p>Design systems help with design debt
+    	<ul class="govuk-list govuk-list--bullet">
+    		<li>making it visible: what we have recorded currently - what's in prod - shows the design debt.  It shows the differences between systems.  This feels easy to measure</li>
+    		<li>reducing future debt: having proven patterns (visual and code) to copy.  Less debt taken on.  Possibly this would be hard to measure - hard to prove how much worth a design system has</li>
+    	</ul>
+    </p>
+    <hr>
+
+	  <h4 class="govuk-heading-s">Process-first design systems</h3>
+	  <p>
+		  <q cite="https://www.ucdgathering.net/programme/process-first-design-systems">A design system should be more than a collection of patterns or a style guide. Design systems can (and should) inform how everyone in your teams contributes to the design of a product or service. By focusing on your processes and ways of working, your organisation can build a more robust system that helps teams deliver better.</q>
+		</p>
+	  <p><a href="/public/documents/weeknotes/DesignSystems_UCDGathering-Jack-Transcipt.pdf">talk transcript (pdf)</a>.  my notes/transcipt:</p>
+    <p><b>Whats the point?</b>
+    	<ul class="govuk-list govuk-list--bullet">
+    		<li>Design systems help organisations stay consistent - thats usually where they start off - the trigger</li>
+    		<li>they empower individuals to work collaboratively (if you have lots of designers in different areas [aka silos]).  This is an opportunity to work together</li>
+    		<li>they also help teams deliver better. Faster eventually, but to begin with they will slow us down - and thats good - to be more considered.  to make the way we design a little more deliberate</li>
+    		<li>a design system should reflect how your team works, not how you think they should.  At first you are essentially creating a library of whats happened</li>
+    		<li>should include ways of working</li>
+    	</ul>
+    </p>
+    <p><b>Misconceptions and Myths</b>:
+    	<ul class="govuk-list govuk-list--number">
+    		<li>a design system is a library of reusable patterns (the biggest culprit).  Your pattern library is just one part of your design system.  Focusing on it is reactionary to the inconsistency in your products. <b>Its more efficient to solve the root cause of that inconsistency</b> - at the very beginning, before inconsistency happens.  <b>The root cause is generally in the process</b> - in in how people work together - in both design teams and multi-disciplinary teams.</li>
+    		<li>Visual consistency is the goal of the design system.  Can be impossible to achieve - especially with many teams. <b>Visual familiarity is the goal</b>.  Vogue quote - when shaping eyebrows they should be sisters and not twins!  In gov though closer is better, but still dont want renew driving license to feel like prison service</li>
+    		<li>It should tell designers how to design products and services.  Thats not un-true, it just shouldn't be hard and fast rules.  <b>It should help teams make products and services</b>.  Design system is led by the emerging products and services, not dictated.  Essentially - you don't make the design system first.  Document whats been done then that becomes your design system, after that you can change things over time - it should set the tone and the structure of how your organisation designs the thing it does</li>
+    		<li>a design system is for designers.  It should be relevant to everyone in your organisation who's making products and services in your org.  <b>A design system is for everyone in your team</b>.  It can be led by designers, but its about realising the product and services (eg architect - designs the building, but doesn't supply the bricks)</li>
+    	</ul>
+    </p>
+    <p><b>So, how should we think about it?  A new plan</b>:
+    	<ul class="govuk-list govuk-list--bullet">
+    		<li>The principles and materials needed to design a product or service in a way that remains as consistent as necessary - not as consistent as possible.  So not just a pattern library, but the stuff around it - how we do it, and why we do it.</li>
+    		<li>a) technical system.  the physical bit, the cogs etc</li>
+    		<li>b) <b>behavioural system (the missing bit) a process driven design system</b>. the individual needs and rewards and expectations and attributes of the human beings in an organisation.  how do those people do the work they do? what do they need to be able to do that? not just the tools.</li>
+    		<li><b>prioritise process before patterns and components</b> helps us see where we can streamline and improve how we work as a team.  Improves design overall and bring individuals together.  create a collaborative environment at every stage,design isn't just for designers</li>
+    	</ul>
+    </p>
+    <p>Where to start?  Try to figure out <b>what should the design system be</b>... What should be in it, what content, what tools.  There are 1000's of companies doing design systems and the temptation is to take inspiration from them.  Keep in mind they are solving design problems unique to their organisation, and they may not be doing it very well.</p>
+    <p><b>7 steps to implement a process-first design system</b>:
+    	<ul class="govuk-list govuk-list--number">
+    		<li><b>Do some internal research</b> - learn about teams end-to-end process, how are decisions made? who makes them? what they need to make those decisions.  Consider the process from inception right through to final delivery of the work, and how people work together on that.  How does the work go from research to design to engineering to production? how does that happen. What happens at those stages - not just sending a sketch file across, but what decisions happen. trying to find opportunities to collaborate</li>
+    		<li><b>Map your process</b>.  (like a journey map).  Try to generalise.  <a href="/public/images/weeknotes/design-process.png">Process may look like this (image)</a>, What we can do is look <a href="/public/images/weeknotes/design-process-improved.png">where we can introduce new stages (image)</a> - <b>for review and documentation</b>. The idea behind this is to get people thinking about reuse - not just patterns and components, but ways of working and principles. get them thinking about that re-usability as they are doing the work.  Reviews might look like it slows things down - and it will initially, as people get used to it - but starts to remove later problems, and raises design skills across the team/org</li>
+    		<li><b>Create space for it to live and grow</b>. Ideally you want everything you document to follow the same structure.  Really the design process should be able to be transplanted into engineering or product.  Documenting the design as you go - want to be in a place everyone can access and everyone can understand.  <a href="/public/images/weeknotes/to-document-about-each-design.png">Example (image) (for any piece of work - this example is for a design system thing, but same for anything)</a>. Like to apply Alpha, beta, live to a really granular level - to each design thing.  Note he means live as in - in production</li>
+    		<li><b>Fill in the gaps</b>. e.g. perhaps you don't have design principles and you think it will benefit your team to have a set, or perhaps you want to tighten the relationship between design and product, or engineering and research... good way of doing that is to</li>
+    		<li><b>Create ceremonies</b>. Set aside some time to discuss the design system, whether to contribute to it, to check in with it, or to manage change.  e.g. once a week - new patterns can be discussed, old components can be updated.  <b>The importance is to create an environment of decision making</b>. Use it as a way to streamline the process, to own it, accountability and responsibility</li>
+    		<li><b>Start bringing it to the wider organisation</b>. If your org is large theres a good chance lots of people can be left out that could contribute.  Its not just about you as a designer, Marketing, comms team, or technical stakeholders - these are all valuable design resource.  Theres a shared identity with what your org puts out there.</li>
+    		<li><b>Test, learn and share</b>.  A design system is never going to be finished.  As teams grow and change, so does the design system.  Its ok to remove stuff its ok to fail, its ok to start again.  Share (in the open) - there are lots of people there to give advice, and there of lots of people who need advice.</li>
+    	</ul>
+    </p>
+    <p>The main benefit of a design system - its not documenting the patterns and components - its in streamlining those processes and bringing together the teams as a cohesive unit.  By learning form the people that contribute to the product in your org, everyone that contributes to it, you can begin to instill that collaborative way of thinking, by default. Encourage everyone to be involved in design, open it up for other people.  Free the designers up to solve broader problems.  The side effect being they become much more agile, things become faster, and therefore cheaper.</p>
+
+
+
     <h3 class="govuk-heading-m" id="weeknotes-09-oct-2020">09 October 2020</h3>
 
     <p>
