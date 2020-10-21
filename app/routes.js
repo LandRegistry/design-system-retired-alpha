@@ -42,6 +42,7 @@ router.get('/beta/v*/weeknotes', function (req, res) {
   res.redirect('/beta/weeknotes/weeknotes')
 })
 
+
 // history is not versioned, so lets make it easy for people to... 
 // ... do href="history" from any version, or "/history" and redirect to static location
 router.get('/history', function (req, res) {
@@ -55,7 +56,7 @@ router.get('/beta/v*/history', function (req, res) {
 
 
 
-// ///// - this is old stuff, alongisde other code not needed here - AP - 25 sept 2020 - all below can go ////////
+// ///// - this is old stuff, alongside other code not needed here - AP - 25 sept 2020 - all below can go ////////
 
 // /////////////////////////
 // three DJP journey
@@ -178,5 +179,7 @@ router.get('/docs/examples/pass-data/vehicle-registration-lorry1', function (req
 })
 
 
-
+// //////////////////////////////
+// this needs to be the last line in the file
+// //////////////////////////////
 module.exports = router
