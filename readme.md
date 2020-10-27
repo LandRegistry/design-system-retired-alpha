@@ -1,4 +1,13 @@
-# design system alpha
+# design system (private beta, and includes the alpha)
+
+private beta:
+
+- advice for all new work
+- how to get involved improving the system
+- learning what works - to meet people needs
+- designers first
+
+alpha:
 
 exploring ideas for an HM Land Registry design system
 
