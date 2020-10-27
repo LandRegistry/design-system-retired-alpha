@@ -19,6 +19,8 @@
 
     <h3 class="govuk-heading-m" id="weeknotes-30-oct-2020">30 October 2020</h3>
 
+    <h4 class="govuk-heading-s">Handover / assessment to go into private beta</h4>
+
     <p><a href="https://web.microsoftstream.com/video/5c812d75-320c-429e-9f78-f1c3efab8432">Design system overview - what is is, why, what next - chat with Joe (video, no captions, 54 mins, Microsoft Streams staff only access)</a>, to hand things over to him.</p>
 
     <p>Just before the meet i thought - what about recording it.  Its no overhead to record it, and in some ways brings more focus.</p>
@@ -36,6 +38,18 @@
     <p>Set up a public (inside the organisation) streams group and channel for it, and the practice.  Shared that Design slack.  Andy Carr watched it straight afterwards - so an unexpected bonus.  He had a great suggestion about adoption of agreed patterns in existing products/teams - every product upgrade/iteration has to include one new design system pattern.  I like this - something that feels agreeable/adoptable inside the org, as we need a simple mechanism agreed by everyone to keep on top of design debt/improve products incrementally.  Yay working in the open &#129303; </p>
 
     <p>Focused the hour as an overview and how it worked - on him understanding enough at a high level.  No time to show the inner workings, details, or go full assessment mode.</p>
+
+    <h4 class="govuk-heading-s">Naming</h4>
+
+    <p>Alpha was in the URL, and the github repo title.  Better to rename it (at least the public URL) before its shipped.  So I had to pick a better name, for a private beta.</p>
+
+
+    <p>URL/name should long term be design-system.[ourdomain].gov.uk (on our domain).  but it's private beta.</p>
+    
+    <p>This isn't a thing that needs a verb name - what's the verb service here? Its not a service.  Its a product. Product equals descriptive noun: design system.  But thats not available on Heroku, so needs to be unique.</p>
+
+    <p>Don't add the org name to the front - thats org top down/centric thinking, not user centred.  And not good content.  for example - As me (an example user) - I don't want to see hmlr- in the browser tab hiding the useful part of the name, I need to glance at the browser tabs.  Or when typing the url in I don't want to have to type hmlr first - i think about the thing i need, not the org first.</p>
+    <p>Same in the repo name, etc.  Front load the name of the thing.  Add org name to the end, to make it unique on Heroku.</p>
 
 
     <h3 class="govuk-heading-m" id="weeknotes-23-oct-2020">23 October 2020</h3>
