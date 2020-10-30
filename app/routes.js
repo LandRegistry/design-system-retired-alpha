@@ -15,6 +15,11 @@ router.use('/node_modules', express.static('node_modules'))
 // key versioned pages that need routes to always go to latest version
 // //////////////////////////////
 
+// These are needed so 
+// - the footer links in the root pages (not in the version folders) like weeknotes and history put peopl in the right place
+// - to avoind misteaks in writing links - when doing "/link" or "link" in versioned pages
+// It makes he site more robust and less likely to break when changed
+
 // index page is versioned - in folders beta/vx
 // Always make default home route go to latest beta version of the design system
 router.get('/', function (req, res) {
@@ -25,6 +30,12 @@ router.get('/', function (req, res) {
 // Always make default advice route go to latest beta version of the advice page
 router.get('/advice', function (req, res) {
   res.redirect('/beta/v3/advice')
+})
+
+// accessibilty ststement is versioned - in folders beta/vx
+// Always make default advice route go to latest beta version of the advice page
+router.get('/accessibility-statement', function (req, res) {
+  res.redirect('/beta/v3/accessibility-statement')
 })
 
 // ///////////////////////
