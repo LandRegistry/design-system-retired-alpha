@@ -35,3 +35,8 @@ $app-code-color: #d13118;
 .app-width-container {
   @include govuk-width-container(1100px);
 }
+
+* {font-family:"HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
